@@ -5,10 +5,10 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".MainActivity">
-
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
@@ -36,6 +36,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/button2"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="sign up"
+                    android:onClick="navigateSignUp"
+                    android:id="@+id/signUpButton"/>
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
